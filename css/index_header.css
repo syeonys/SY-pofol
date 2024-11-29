@@ -1,0 +1,137 @@
+header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+nav {
+  font-size: 16px;
+  font-family: "Pretendard Medium";
+  color: #333;
+}
+nav > ul {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border: 1px solid #000;
+  border-radius: 99px;
+  gap: 30px;
+  padding: 6px;
+}
+nav > ul .main-menu.on a img {
+  transform: rotate(45deg);
+}
+nav > ul .main-menu.on .sub-menu {
+  top: 60px;
+  opacity: 1;
+}
+nav > ul .main-menu.on .sub-menu li:nth-child(2) {
+  top: 60px;
+}
+nav > ul .main-menu.on .sub-menu li:nth-child(3) {
+  top: 120px;
+}
+nav > ul .main-menu.on .sub-menu li:nth-child(4) {
+  top: 180px;
+}
+nav > ul li {
+  position: relative;
+}
+nav > ul li.home {
+  width: auto;
+}
+nav > ul li.home a {
+  width: auto;
+  padding: 6px 20px;
+}
+nav > ul li.project a {
+  background: #6079FF;
+}
+nav > ul li.filter a {
+  background: #ffd65b;
+}
+nav > ul li a {
+  border: 1px solid #000;
+  height: 34px;
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  border-radius: 99px;
+  padding: 6px;
+  padding-left: 20px;
+  line-height: 2;
+}
+nav > ul li a img {
+  transition: 0.4s;
+  background: #000;
+  padding: 5px;
+  border-radius: 99px;
+}
+nav > ul li .sub-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  opacity: 0;
+  transition: 0.4s;
+}
+nav > ul li .sub-menu li {
+  border-radius: 99px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  opacity: 1;
+  transition: 0.4s;
+}
+nav > ul li .sub-menu li img {
+  opacity: 0;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  color: #eee;
+  z-index: 9;
+}
+footer .gnb {
+  padding: 0 30px;
+  height: 100%;
+  justify-content: space-between;
+}
+footer .gnb ul {
+  gap: 50px;
+  font-size: 15px;
+}
+footer .gnb ul li {
+  display: flex;
+  align-items: center;
+}
+footer .gnb ul a {
+  display: flex;
+  align-items: center;
+}
+footer .gnb ul img {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  nav > ul {
+    gap: 20px;
+  }
+  nav > ul li a {
+    width: 120px;
+  }
+  footer {
+    display: none;
+  }
+}

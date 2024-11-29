@@ -1,0 +1,327 @@
+body {
+  font-family: "Pretendard Light";
+}
+body h1 {
+  font-size: 80px;
+  font-family: "Pretendard Medium";
+  font-style: normal;
+  font-weight: normal;
+  color: #333;
+}
+body h2 {
+  font-size: 100px;
+  font-family: "Pretendard Medium";
+  font-style: normal;
+  font-weight: normal;
+  color: #6079FF;
+}
+body h3 {
+  font-size: 40px;
+  font-family: "Pretendard Light";
+  font-style: normal;
+  font-weight: normal;
+  color: #6079FF;
+}
+body h4 {
+  font-size: 18px;
+  font-family: "Pretendard Medium";
+  font-style: normal;
+  font-weight: normal;
+  color: #333;
+  line-height: 1.2;
+}
+body p {
+  font-size: 16px;
+  font-family: "Pretendard Light";
+  font-style: normal;
+  font-weight: normal;
+  color: #333;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+
+.progress {
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1%;
+  height: 6px;
+  background-color: #6079FF;
+  border: 1px solid #000;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main section {
+  border-bottom: 1px solid #000;
+}
+main article {
+  border: 3px solid #ccc;
+}
+
+.intro {
+  height: 100%;
+}
+.intro .wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.intro .wrap .desc {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.intro .wrap .desc > div, .intro .wrap .desc > ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro .wrap .desc .summary li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #000;
+}
+.intro .wrap .desc .summary li:nth-last-child(1) {
+  border: none;
+}
+.intro .wrap .desc .summary li a {
+  font-size: 18px;
+  font-family: "Pretendard Medium";
+  font-style: normal;
+  font-weight: normal;
+}
+.intro .wrap .desc .summary li span {
+  font-size: 16px;
+  font-family: "Pretendard Light";
+  font-style: normal;
+  font-weight: normal;
+}
+.intro .wrap .desc .summary li .skill {
+  width: 60%;
+  justify-content: right;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.intro .wrap .desc .summary li .skill span {
+  font-size: 15px;
+  display: block;
+  padding: 4px 12px;
+  border: 1px solid #000;
+  border-radius: 99px;
+}
+.intro .wrap .main-visual {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  background: #eee;
+}
+
+.title {
+  padding: 30px;
+}
+
+.contents {
+  padding: 30px;
+}
+
+.content {
+  justify-content: space-between;
+}
+.content > div {
+  width: 49%;
+  margin-bottom: 40px;
+}
+.content .images {
+  width: 100%;
+}
+.content .images figure {
+  width: 100%;
+  border: 1px solid #000;
+}
+.content .images figure img {
+  width: 100%;
+}
+.content .images figcaption {
+  padding: 0 30px;
+  border: 1px solid #000;
+}
+
+@media screen and (max-width: 660px) {
+  .wrap {
+    position: relative;
+  }
+  .wrap .desc {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrap .desc > div, .wrap .desc > ul {
+    width: 95%;
+  }
+  .wrap .desc .summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+  }
+  .wrap .desc .summary li:nth-last-child(1) {
+    border: none;
+  }
+  .wrap .desc .summary li a {
+    font-size: 18px;
+    font-family: "Pretendard Medium";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .wrap .desc .summary li span {
+    font-size: 16px;
+    font-family: "Pretendard Light";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .wrap .desc .summary li .skill {
+    width: 60%;
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .wrap .desc .summary li .skill span {
+    font-size: 15px;
+    display: block;
+    padding: 4px 12px;
+    border: 1px solid #000;
+    border-radius: 99px;
+  }
+  .wrap .main-visual {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 661px) and (max-width: 1024px) {
+  .wrap {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .wrap .desc {
+    width: 100%;
+    padding-bottom: 50px;
+    height: 40%;
+    border: 1px solid #000;
+  }
+  .wrap .desc > div, .wrap .desc > ul {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wrap .desc .summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+  }
+  .wrap .desc .summary li:nth-last-child(1) {
+    border: none;
+  }
+  .wrap .desc .summary li a {
+    font-size: 18px;
+    font-family: "Pretendard Medium";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .wrap .desc .summary li span {
+    font-size: 16px;
+    font-family: "Pretendard Light";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .wrap .desc .summary li .skill {
+    width: 60%;
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .wrap .desc .summary li .skill span {
+    font-size: 15px;
+    display: block;
+    padding: 4px 12px;
+    border: 1px solid #000;
+    border-radius: 99px;
+  }
+  .wrap .main-visual {
+    width: 100%;
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .intro {
+    height: 100%;
+  }
+  .intro .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .intro .wrap .desc {
+    padding: 20px 0;
+    width: 25%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .intro .wrap .desc > div, .intro .wrap .desc > ul {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro .wrap .desc .summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+  }
+  .intro .wrap .desc .summary li:nth-last-child(1) {
+    border: none;
+  }
+  .intro .wrap .desc .summary li a {
+    font-size: 18px;
+    font-family: "Pretendard Medium";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .intro .wrap .desc .summary li span {
+    font-size: 16px;
+    font-family: "Pretendard Light";
+    font-style: normal;
+    font-weight: normal;
+  }
+  .intro .wrap .desc .summary li .skill {
+    width: 60%;
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .intro .wrap .desc .summary li .skill span {
+    font-size: 15px;
+    display: block;
+    padding: 4px 12px;
+    border: 1px solid #000;
+    border-radius: 99px;
+  }
+  .intro .wrap .main-visual {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background: #eee;
+  }
+}
